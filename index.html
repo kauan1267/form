@@ -1,0 +1,45 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Formulário - Equipe Log</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+    <div id="intro">
+        <div class="slide">Formulário para a Equipe Log</div>
+        <div class="slide">⛔ Não é permitido colar, sair ou refazer o formulário. Tempo: 12 minutos.</div>
+        <div class="slide">
+            <button onclick="startForm()">Iniciar</button>
+        </div>
+    </div>
+
+    <form id="formulario" action="https://formsubmit.co/santiagokauan30@gmail.com" method="POST" style="display:none;">
+        <input type="hidden" name="_captcha" value="false">
+        <input type="hidden" name="_next" value="https://google.com">
+
+        <div class="question">Nome + ID Discord:<br><input name="Nome e ID Discord" required></div>
+        <div class="question">Qual seu horário disponível pra ajudar na log?<br><input name="Horário disponível" required></div>
+        <div class="question">Atua em alguma área da staff? Se sim, quais?<br><input name="Áreas da staff" required></div>
+        <div class="question">Já teve experiência como Equipe. LOG? Se sim, me diga mais sobre.<br><textarea name="Experiência log" required></textarea></div>
+        <div class="question">Pra que serve o comando hackperma? E quando ele deve ser usado?<br><textarea name="Hackperma" required></textarea></div>
+        <div class="question">Em quais situações o propmanager seria ideal para achar hacker?<br><textarea name="Propmanager" required></textarea></div>
+        <div class="question">Pra que serve o delobjs? E em quais situações seria necessário usá-lo?<br><textarea name="Delobjs" required></textarea></div>
+        <div class="question">Pra que serve o forcedelete? E por que ele pode ser usado quando o delobjs não funcionar?<br><textarea name="Forcedelete" required></textarea></div>
+        <div class="question">Como você poderia achar o hack que usa função do mod menu pra falar alto?<br><textarea name="Hack fala alto" required></textarea></div>
+        <div class="question">Se você banir um hacker e ele não for kikado da cidade, o que você poderia fazer?<br><textarea name="Ban sem kick" required></textarea></div>
+        <div class="question">Se você ver um hacker zaralhando na cidade, o que você faria?<br><textarea name="Hacker zaralhando" required></textarea></div>
+        <div class="question">Está ciente que se entrar pra log, você terá uma meta semanal de 50 banimentos?<br>
+            <label><input type="radio" name="Meta 50 banimentos" value="Sim" required> Sim</label>
+            <label><input type="radio" name="Meta 50 banimentos" value="Não"> Não</label>
+        </div>
+        <div class="question">Se alguém te marcar num ticket falando que o dinheiro dele sumiu, o que você faria?<br><textarea name="Ticket dinheiro sumido" required></textarea></div>
+
+        <button type="submit">Enviar</button>
+    </form>
+
+    <script src="script.js"></script>
+</body>
+</html>
